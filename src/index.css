@@ -21,7 +21,7 @@ h1 {
 
 /* Formulario */
 form {
-  background-color: #fff;
+  background-color: #e8dcdc;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -57,24 +57,25 @@ form button:hover {
   background-color: #a1a1a1;
 }
 
-/* Lista de Citas */
+/* Lista de Citas  */
 .citas-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
+  gap: 10px;
+  max-width: 400px;
   width: 100%;
+  margin-bottom: 60px;
 }
 
 .citas-list div {
-  background-color: #fff;
-  padding: 15px;
+  background-color: #c3b8b8;
+  padding: 9px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .citas-list h3 {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   margin-bottom: 5px;
   color: #000000;
 }
@@ -82,6 +83,19 @@ form button:hover {
 .citas-list p {
   font-size: 0.9rem;
   color: #000000;
+}
+
+/* footer codigo que posiciona abajo y centrado*/
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
 }
 
 /* Responsividad */

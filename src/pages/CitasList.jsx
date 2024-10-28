@@ -19,18 +19,20 @@ const CitasList = () => {
   }, []);
 
   return (
-    <div>
-      {citas.length === 0 ? (
-        <p>No hay citas registradas.</p>
-      ) : (
-        citas.map((cita) => (
-          <div key={cita.id}>
-            <h3>{cita.name}</h3>
-            <p>{new Date(cita.date).toLocaleString()}</p>
-          </div>
-        ))
-      )}
-    </div>
+    <section class= "citas-list">  
+      <div>
+        {citas.length === 0 ? (
+          <p>No hay citas registradas.</p>
+        ) : (
+          citas.map((cita) => (
+            <div key={cita.id}>
+              <h3>{cita.name}</h3>
+              <p>{new Date(cita.date).toLocaleString()}</p>
+            </div>
+          ))
+        )}
+      </div>
+    </section>
   );
 };
 
